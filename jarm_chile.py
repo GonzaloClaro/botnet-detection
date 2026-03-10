@@ -29,6 +29,5 @@ inner_join["Fecha"]=fecha
 #Se elimina el campo repetido del Jarm
 resultado_final = inner_join.drop(["Jarm C2"], axis=1)
 
-#df.to_csv(r'Path where you want to store the exported CSV file\File Name.csv')
-#df_output.to_csv(r'C:\Users\gonza\Desktop\Botnets_red_chilena.csv') seria en caso de no estar corriendo en colab
-resultado_final.to_csv('Botnets_red_chilena.csv',index=False) #index se puede dejar como false para mantenerlos o quitar para que salga sin los header
+#df.to_csv(r'Path\to\output\Botnets_red_chilena.csv')
+resultado_final.to_csv('Botnets_red_chilena.csv', index=False)
